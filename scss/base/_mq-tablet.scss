@@ -76,6 +76,7 @@
             }
         }
         #mayoristas{
+            max-width: 100%;
             h2{
                 font-size: 40px;
             }
@@ -84,10 +85,31 @@
             }
             .p-mayoristas{
                 font-size: variables.$font-s-xl;
-                .cuadro-container{
-                    .cuadro-btn{
-                        font-size: variables.$font-s-xl;
-                        font-weight: variables.$font-w-medium;
+                .cuadro-container{    
+                    display: flex;
+                    flex-wrap:wrap;
+                    justify-content: center;
+                    gap: 10px;
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+                .cuadro-btn{
+                    padding: 20px 40px;
+                    margin: 10px;
+                    font-size: variables.$font-s-larger;
+                    font-weight: variables.$font-w-black;
+                    border: variables.$color-tipografia;
+                    border-radius: 5px;
+                    text-align: center;
+                    display: inline-block;
+                }
+                .resultado{
+                    margin-top: 20px;
+                    font-size: variables.$font-s-larger;
+                    font-weight: variables.$font-w-large;
+                    color: variables.$color-tipografia;
+                    strong{
+                        color: variables.$color-tipografia;
                     }
                 }
             }

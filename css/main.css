@@ -19,7 +19,7 @@ html {
 /* Propiedades del Header */
 header {
   height: 120px;
-  background-color: rgb(161, 221, 194);
+  background-color: #FFFFFF;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -27,7 +27,7 @@ header {
 
 /* Propiedades del Menú*/
 .navbar-prop {
-  background-color: rgb(161, 221, 194);
+  background-color: #FFFFFF;
   color: #000000;
   height: 150px;
 }
@@ -67,6 +67,9 @@ header {
 }
 
 /* Propiedades del Footer*/
+footer {
+  padding-top: 30px;
+}
 footer .derechos {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -127,6 +130,13 @@ footer .item-fixed .whatsapp {
 }
 
 /*Propiedades de Home*/
+body {
+  background-color: #FFFFFF;
+}
+
+.mainHome {
+  background-color: #FFFFFF;
+}
 .mainHome div img {
   width: 100%;
   height: 100%;
@@ -136,6 +146,9 @@ footer .item-fixed .whatsapp {
   margin-top: 30px;
 }
 
+#productos {
+  padding-bottom: 30px;
+}
 #productos h2 {
   text-align: center;
   margin-top: 10px;
@@ -158,17 +171,18 @@ footer .item-fixed .whatsapp {
   border: none;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgb(128, 127, 127);
+  box-shadow: 2px 4px 4px 2px rgb(128, 127, 127);
   text-align: center;
   padding: 16px;
 }
 #productos .product-grid .product-card img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   margin-bottom: 12px;
 }
 #productos .product-grid .product-card .envios {
   margin-top: 30px;
+  padding-bottom: 30px;
 }
 #productos .product-grid .product-card h3 {
   font-size: 1.1em;
@@ -196,6 +210,9 @@ footer .item-fixed .whatsapp {
   background-color: #333;
 }
 
+#nosotros {
+  padding-bottom: 30px;
+}
 #nosotros h2 {
   text-align: center;
   margin-top: 20px;
@@ -231,6 +248,9 @@ footer .item-fixed .whatsapp {
   display: none;
 }
 
+#mayoristas {
+  padding-bottom: 30px;
+}
 #mayoristas h2 {
   text-align: center;
   margin-top: 20px;
@@ -254,21 +274,25 @@ footer .item-fixed .whatsapp {
 }
 #mayoristas .cuadro-container {
   display: flex;
-  flex-wrap: inherit;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
-#mayoristas .cuadro-container .cuadro-btn {
-  padding: 12px 25px;
-  margin: 5px;
+#mayoristas .cuadro-btn {
+  padding: 10px 20px;
+  margin: 10px;
   font-size: small;
   font-weight: bold;
   border: #000000;
   border-radius: 5px;
+  text-align: center;
+  display: inline-block;
 }
 #mayoristas .resultado {
   margin-top: 20px;
-  font-size: medium;
+  font-size: small;
   font-weight: 500;
   color: #000000;
 }
@@ -283,7 +307,7 @@ footer .item-fixed .whatsapp {
   width: 100%;
   max-width: 600px;
   margin-top: 25px;
-  box-shadow: 5px 5px 5px rgb(128, 127, 127);
+  box-shadow: 3px 3px 5px 5px rgb(128, 127, 127);
 }
 #mayoristas #formularioContacto.visible {
   display: block;
@@ -322,6 +346,9 @@ footer .item-fixed .whatsapp {
   resize: vertical;
   min-height: 120px;
 }
+#mayoristas #formularioContacto #contactoForm .form-group .error {
+  border: 2px solid tomato;
+}
 #mayoristas #formularioContacto #contactoForm button {
   background-color: #000000;
   color: white;
@@ -332,8 +359,23 @@ footer .item-fixed .whatsapp {
   font-size: medium;
 }
 #mayoristas #formularioContacto #contactoForm button:hover {
-  background-color: rgb(161, 221, 194);
+  background-color: #FFFFFF;
   color: #000000;
+}
+#mayoristas #formularioContacto #contactoForm .mensaje-exito {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#mayoristas #formularioContacto #contactoForm .mensaje-exito h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+#mayoristas #formularioContacto #contactoForm .mensaje-exito p {
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 /* Estilos TABLET */
@@ -382,6 +424,9 @@ footer .item-fixed .whatsapp {
   .mainHome #nosotros .containerNosotros .p-nosotros span {
     display: inline;
   }
+  .mainHome #mayoristas {
+    max-width: 100%;
+  }
   .mainHome #mayoristas h2 {
     font-size: 40px;
   }
@@ -392,9 +437,32 @@ footer .item-fixed .whatsapp {
   .mainHome #mayoristas .p-mayoristas {
     font-size: x-large;
   }
-  .mainHome #mayoristas .p-mayoristas .cuadro-container .cuadro-btn {
-    font-size: x-large;
-    font-weight: 500;
+  .mainHome #mayoristas .p-mayoristas .cuadro-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .mainHome #mayoristas .p-mayoristas .cuadro-btn {
+    padding: 20px 40px;
+    margin: 10px;
+    font-size: larger;
+    font-weight: bold;
+    border: #000000;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+  }
+  .mainHome #mayoristas .p-mayoristas .resultado {
+    margin-top: 20px;
+    font-size: larger;
+    font-weight: 600;
+    color: #000000;
+  }
+  .mainHome #mayoristas .p-mayoristas .resultado strong {
+    color: #000000;
   }
   .mainHome #mayoristas #formularioContacto {
     max-width: 700px;
@@ -517,7 +585,16 @@ footer .item-fixed .whatsapp {
   }
   /* Propiedades del conteido Principal*/
   .mainHome #productos h2 {
-    font-size: 50px;
+    font-size: xx-large;
+  }
+  .mainHome #productos p {
+    font-size: x-large;
+  }
+  .mainHome #productos .product-grid {
+    padding-top: 50px;
+  }
+  .mainHome #nosotros {
+    padding-top: 30px;
   }
   .mainHome #nosotros h2 {
     font-size: 50px;
@@ -525,6 +602,7 @@ footer .item-fixed .whatsapp {
   .mainHome #nosotros .containerNosotros {
     display: flex;
     justify-content: space-between;
+    padding-top: 50px;
     gap: 20px;
     align-items: center;
   }
@@ -535,19 +613,36 @@ footer .item-fixed .whatsapp {
     width: 80%;
   }
   .mainHome #mayoristas h2 {
-    font-size: 50px;
+    font-size: xx-large;
+  }
+  .mainHome #mayoristas p {
+    font-size: x-large;
   }
   .mainHome #mayoristas .p-mayoristas {
     font-size: x-large;
     font-weight: bold;
   }
-  .mainHome #mayoristas .p-mayoristas .cuadro-container .cuadro-btn {
+  .mainHome #mayoristas .p-mayoristas .cuadro-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .mainHome #mayoristas .p-mayoristas .cuadro-btn {
+    padding: 10px 20px;
+    margin: 10px;
     font-size: xx-large;
-    font-weight: 600;
+    font-weight: bold;
+    border: #000000;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
   }
   .mainHome #mayoristas .p-mayoristas .resultado {
     margin-top: 20px;
-    font-size: larger;
+    font-size: xx-large;
     font-weight: 500;
     color: #000000;
   }
@@ -581,12 +676,25 @@ footer .item-fixed .whatsapp {
   }
 }
 /*Propiedades de Carrito*/
+.mainCarrito {
+  padding-bottom: 300px;
+}
+.mainCarrito h3 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: larger;
+  font-weight: bold;
+  color: #000000;
+}
 .mainCarrito h2 {
   text-align: center;
   margin-top: 10px;
   font-size: x-large;
   font-weight: bold;
   color: #000000;
+}
+.mainCarrito iframe.giphy-embed {
+  pointer-events: none; /* Deshabilita la interacción con el iframe */
 }
 .mainCarrito #cart-container {
   width: 90%;

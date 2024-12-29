@@ -5,6 +5,14 @@
 
 /*Propiedades de Carrito*/
 .mainCarrito{
+  h3{
+    text-align: variables.$align-center;
+    margin-top: 10px;
+    font-size: variables.$font-s-larger;
+    font-weight: variables.$font-w-black;
+    color: variables.$color-tipografia;
+  }
+  padding-bottom: 300px;
     h2{
         text-align: variables.$align-center;
         margin-top: 10px;
@@ -12,6 +20,9 @@
         font-weight: variables.$font-w-black;
         color: variables.$color-tipografia;
     }
+    iframe.giphy-embed {
+      pointer-events: none; /* Deshabilita la interacción con el iframe */
+  }
    // Estilos del carrito
     #cart-container {
     width: 90%;

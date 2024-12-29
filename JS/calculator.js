@@ -1,4 +1,3 @@
-
 class Cuadro {
     constructor(tamaño, dimensiones, precio) {
         this.tamaño = tamaño;
@@ -23,23 +22,23 @@ function calcularReventa(precio) {
 // Mostrar cuadros en botones
 function mostrarCuadros() {
     const contenedor = document.getElementById('cuadrosDisponibles');
-    cuadros.forEach(cuadro => {
+    cuadros.forEach(({ tamaño, dimensiones, precio }) => {  // Desestructuramos aquí
         const btn = document.createElement('button');
-        btn.textContent = `${cuadro.tamaño} - ${cuadro.dimensiones}`;
+        btn.textContent = `${tamaño} - ${dimensiones}`;
         btn.classList.add('cuadro-btn');
-        btn.addEventListener('click', () => mostrarPrecioReventa(cuadro));
+        btn.addEventListener('click', () => mostrarPrecioReventa({ tamaño, dimensiones, precio }));  // Pasamos el objeto con desestructuración
         contenedor.appendChild(btn);
     });
 }
 
 // Mostrar precio de reventa
-function mostrarPrecioReventa(cuadro) {
-    const precioReventa = calcularReventa(cuadro.precio);
+function mostrarPrecioReventa({ tamaño, dimensiones, precio }) {  // Desestructuramos aquí también
+    const precioReventa = calcularReventa(precio);
     const resultadoDiv = document.getElementById('resultado');
     resultadoDiv.style.display = 'block';
     resultadoDiv.innerHTML = `
-        <strong>Cuadro Seleccionado:</strong> ${cuadro.tamaño} - ${cuadro.dimensiones}<br>
-        <strong>Precio Base:</strong> $${cuadro.precio}<br>
+        <strong>Cuadro Seleccionado:</strong> ${tamaño} - ${dimensiones}<br>
+        <strong>Precio Base:</strong> $${precio}<br>
         <strong>Precio con Reventa:</strong> $${precioReventa.toFixed(2)}
     `;
 }

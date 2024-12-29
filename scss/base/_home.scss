@@ -7,8 +7,12 @@
 
 
 /*Propiedades de Home*/
+body{
+    background-color: variables.$back-body;
+}
 
 .mainHome{ 
+    background-color: variables.$back-body;
         div{
             img{
                 @include mixin.foto-prod;
@@ -19,6 +23,7 @@
         }
     }
     #productos{
+        padding-bottom: 30px;
         h2{
             text-align: variables.$align-center;
             margin-top: 10px;
@@ -39,16 +44,17 @@
                 border: none;
                 border-radius: 8px;
                 overflow: hidden;
-                box-shadow: 0 4px 6px variables.$color-shadow;
+                box-shadow: 2px 4px 4px 2px variables.$color-shadow;
                 text-align: center;
                 padding: 16px;
                 img {
-                max-width: 100%;
+                max-width: 50%;
                 height: auto;
                 margin-bottom: 12px;
                 }
                 .envios{
                 margin-top: 30px;
+                padding-bottom: 30px;
                 }          
                 h3 {
                 font-size: 1.1em;
@@ -79,6 +85,7 @@
             }
     }
     #nosotros{
+        padding-bottom: 30px;
         h2{
             text-align: variables.$align-center;
             margin-top: 20px;
@@ -113,6 +120,7 @@
     }
     }
 #mayoristas{
+    padding-bottom: 30px;
     h2{
         text-align: variables.$align-center;
         margin-top: 20px;
@@ -134,23 +142,27 @@
         font-weight: variables.$font-w-black;
         text-align: variables.$align-center;
 }
-.cuadro-container{
+.cuadro-container{    
     display: flex;
-    flex-wrap: inherit;
+    flex-wrap:wrap;
     justify-content: center;
-    gap: 5px;
-    .cuadro-btn{
-        padding: 12px 25px;
-        margin: 5px;
-        font-size: variables.$font-s-small;
-        font-weight: variables.$font-w-black;
-        border: variables.$color-tipografia;
-        border-radius: 5px;
-    }
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.cuadro-btn{
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: variables.$font-s-small;
+    font-weight: variables.$font-w-black;
+    border: variables.$color-tipografia;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
 }
 .resultado{
     margin-top: 20px;
-    font-size: variables.$font-s-medium;
+    font-size: variables.$font-s-small;
     font-weight: variables.$font-w-medium;
     color: variables.$color-tipografia;
     strong{
@@ -165,7 +177,7 @@
     width: 100%;
     max-width: 600px;
     margin-top: 25px;
-    box-shadow: 5px 5px 5px variables.$color-shadow;
+    box-shadow: 3px 3px 5px 5px variables.$color-shadow;
     &.visible{
         display: block;
     }
@@ -201,7 +213,10 @@
                 resize: vertical;
                 min-height: 120px;
             }
-    }
+            .error{
+                border: 2px solid tomato;
+            }
+        }
     button {
         background-color: variables.$color-tipografia;
         color: white;
@@ -215,6 +230,24 @@
             color: variables.$color-tipografia;
         }
 }
+.mensaje-exito {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
     }
+  
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+    
+    }
+}
 }
 }

@@ -1,0 +1,224 @@
+[
+    {
+        "id": 1,
+        "img": "../img/rocky.JPG",
+        "title": "Reproducción en 3D de estatua de Rocky Balboa",
+        "price": 25000
+    },
+    {
+        "id": 2,
+        "img": "../img/funk-cerati.JPG",
+        "title": "Reproducción 3D de muñeco Funko de Gustavo Cerati",
+        "price": 23000
+    },
+    {
+        "id": 3,
+        "img": "../img/funk-chavo.JPG",
+        "title": "Reproducción 3D de muñeco Funko de El Chavo",
+        "price": 23000
+    },
+    {
+        "id": 4,
+        "img": "../img/funk-colapinto.JPG",
+        "title": "Reproducción 3D de muñeco Funko Franco Colapinto",
+        "price": 23000
+    },
+    {
+        "id": 5,
+        "img": "../img/funk-gallardo.JPG",
+        "title": "Reproducción 3D de muñeco Funko de Marcelo Gallardo",
+        "price": 23000
+    },
+    {
+        "id": 6,
+        "img": "../img/funk-indio.JPG",
+        "title": "Reproducción 3D de muñeco Funko de El Indio",
+        "price": 23000
+    },
+    {
+        "id": 7,
+        "img": "../img/funk-maradona94.JPG",
+        "title": "Reproducción 3D de muñeco Funko de Maradona Mundial '94",
+        "price": 23000
+    },
+    {
+        "id": 8,
+        "img": "../img/funk-messi.JPG",
+        "title": "Reproducción 3D de muñeco Funko de Lionel Messi",
+        "price": 23000
+    },
+    {
+        "id": 9,
+        "img": "../img/funk-ortega.JPG",
+        "title": "Reproducción 3D de muñeco Funko de Burrito Ortega",
+        "price": 23000
+    },
+    {
+        "id": 10,
+        "img": "../img/bast-autos.JPG",
+        "title": "Bastidor Autos del Cine",
+        "price": 9000
+    },
+    {
+        "id": 11,
+        "img": "../img/bast-barberia.JPG",
+        "title": "Bastidores Barbería",
+        "price": 9000
+    },
+    {
+        "id": 12,
+        "img": "../img/bast-dogs.JPG",
+        "title": "Bastidores Dogs",
+        "price": 9000
+    },
+    {
+        "id": 13,
+        "img": "../img/bast-gamer.JPG",
+        "title": "Bastidor Gamer",
+        "price": 9000
+    },
+    {
+        "id": 14,
+        "img": "../img/bast-maradona.JPG",
+        "title": "Bastidor Maradona",
+        "price": 9000
+    },
+    {
+        "id": 15,
+        "img": "../img/bast-nord-1.JPG",
+        "title": "Bastidores Nórdicos",
+        "price": 9000
+    },
+    {
+        "id": 16,
+        "img": "../img/bast-nord-3.JPG",
+        "title": "Bastidores Nórdicos",
+        "price": 9000
+    },
+    {
+        "id": 17,
+        "img": "../img/bast-nord-4.JPG",
+        "title": "Bastidores Nórdicos",
+        "price": 9000
+    },
+    {
+        "id": 18,
+        "img": "../img/bast-padre.JPG",
+        "title": "Bastidor Personalizado",
+        "price": 9000
+    },
+    {
+        "id": 19,
+        "img": "../img/bast-queen.JPG",
+        "title": "Bastidor Bohemian Rhapsody",
+        "price": 9000
+    },
+    {
+        "id": 20,
+        "img": "../img/chap-ampm.JPG",
+        "title": "Chapa AM PM",
+        "price": 17500
+    },
+    {
+        "id": 21,
+        "img": "../img/chap-argentina.JPG",
+        "title": "Chapa Conmemorativa Argentina",
+        "price": 17500
+    },
+    {
+        "id": 22,
+        "img": "../img/chap-asador.JPG",
+        "title": "Chapa Un aplauso para el asador",
+        "price": 17500
+    },
+    {
+        "id": 23,
+        "img": "../img/chap-basquet.JPG",
+        "title": "Chapas Equipos Básquet",
+        "price": 23000
+    },
+    {
+        "id": 24,
+        "img": "../img/chap-harry.JPG",
+        "title": "Chapas Harry Potter",
+        "price": 23000
+    },
+    {
+        "id": 25,
+        "img": "../img/chap-pers-1.JPG",
+        "title": "Chapas Patente Personalizadas",
+        "price": 6000
+    },
+    {
+        "id": 26,
+        "img": "../img/chap-pulp.JPG",
+        "title": "Chapa Baño Pulp Fiction",
+        "price": 17500
+    },
+    {
+        "id": 27,
+        "img": "../img/chap-toretto.JPG",
+        "title": "Chapa Patente Toretto",
+        "price": 23000
+    },
+    {
+        "id": 28,
+        "img": "../img/chap-tragos.JPG",
+        "title": "Chapas Personalizadas Tragos",
+        "price": 15000
+    },
+    {
+        "id": 29,
+        "img": "../img/marco-argentina.JPG",
+        "title": "Cuadro Enmarcado Argentina",
+        "price": 35000
+    },
+    {
+        "id": 30,
+        "img": "../img/marco-basquet.JPG",
+        "title": "Cuadros Enmarcados Básquet",
+        "price": 35000
+    },
+    {
+        "id": 31,
+        "img": "../img/marco-fotos.JPG",
+        "title": "Cuadro Enmarcado Personalizado",
+        "price": 35000
+    },
+    {
+        "id": 32,
+        "img": "../img/marco-kiss.JPG",
+        "title": "Cuadro Enmarcado Kiss",
+        "price": 35000
+    },
+    {
+        "id": 33,
+        "img": "../img/marco-mano.JPG",
+        "title": "Cuadro Enmarcado Puño en alto",
+        "price": 35000
+    },
+    {
+        "id": 34,
+        "img": "../img/marco-newyork.JPG",
+        "title": "Cuadro Enmarcado New York",
+        "price": 35000
+    },
+    {
+        "id": 35,
+        "img": "../img/marco-senna.JPG",
+        "title": "Cuadro Enmarcado Ayrton Senna",
+        "price": 35000
+    },
+    {
+        "id": 36,
+        "img": "../img/marco-spotify.JPG",
+        "title": "Cuadro Enmarcado Personalizado Spotify",
+        "price": 35000
+    },
+    {
+        "id": 37,
+        "img": "../img/marco-youtube.JPG",
+        "title": "Cuadro Enmarcado Personalizado Youtube",
+        "price": 35000
+    }
+]

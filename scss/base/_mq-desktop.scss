@@ -93,15 +93,23 @@
     .mainHome{
         #productos{
             h2{
-                font-size: 50px;
+                font-size: variables.$font-s-xxl;
+            }
+            p{
+                font-size: variables.$font-s-xl
+            }
+            .product-grid{
+                padding-top:50px;
             }
         }
         #nosotros{
+            padding-top: 30px;
             h2{
                 font-size: 50px;
             }
                 .containerNosotros{
                     @include mixin.flex;
+                    padding-top: 50px;
                     gap: 20px;
                     align-items: center;
                     .containerVideo{
@@ -114,24 +122,39 @@
         }
         #mayoristas{
             h2{
-                font-size: 50px;
+                font-size: variables.$font-s-xxl;
+            }
+            p{
+                font-size: variables.$font-s-xl
             }
             .p-mayoristas{
                 font-size: variables.$font-s-xl;
                 font-weight: variables.$font-w-black;
-                .cuadro-container{
-                .cuadro-btn{
-                    font-size: variables.$font-s-xxl;
-                    font-weight: variables.$font-w-large;
+                .cuadro-container{    
+                    display: flex;
+                    flex-wrap:wrap;
+                    justify-content: center;
+                    gap: 10px;
+                    width: 100%;
+                    box-sizing: border-box;
                 }
+                .cuadro-btn{
+                    padding: 10px 20px;
+                    margin: 10px;
+                    font-size: variables.$font-s-xxl;
+                    font-weight: variables.$font-w-black;
+                    border: variables.$color-tipografia;
+                    border-radius: 5px;
+                    text-align: center;
+                    display: inline-block;
                 }
                 .resultado{
                     margin-top: 20px;
-                    font-size: variables.$font-s-larger;
+                    font-size: variables.$font-s-xxl;
                     font-weight: variables.$font-w-medium;
                     color: variables.$color-tipografia;
                     strong{
-                    color: variables.$color-tipografia;
+                        color: variables.$color-tipografia;
                     }
                 }
                 #formularioContacto{
